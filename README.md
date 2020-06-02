@@ -27,9 +27,9 @@ Calen-Clone is a replica of Google Calender.The project is hosted on Github http
 2. Go to the above website and scroll down to find 4 links.
 ![Bootstrap CDN](https://i.imgur.com/3Sevt3E.png)
 
-3. Copy the < CSS only > CDN link into the <head></head> tag of your webpage.
+3. Copy the < CSS only > CDN link into the *head* tag of your webpage.
 
-4. Copy the < JS, Popper.js, and jQuery > CDN link just after the ending </body> tag of your webpage.
+4. Copy the < JS, Popper.js, and jQuery > CDN link just after the ending *body* tag of your webpage.
    
 5. The file mention in point 4 should be added in the sequence  jQuery first, then Popper.js, then Bootstrap JS.
 
