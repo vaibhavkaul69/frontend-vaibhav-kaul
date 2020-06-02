@@ -11,10 +11,17 @@
     <link rel="stylesheet" href="/css/bootstrap-reboot.min.css"/>
     <!--Custom css-->
     <link rel="stylesheet" href="/css/index.css"/>
+    <script>
+        let eventCount=localStorage.getItem('event-count');
+        if(eventCount === null || eventCount === undefined){
+            eventCount=0;
+            localStorage.setItem('event-count',eventCount);
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md  navbar-light w-100  bg-light justify-content-between">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="/html/events.html">
             <img src="/assets/calender.png" alt="">
           </a>
           <h3>Welcome to Calen-Clone &#128512;</h3>

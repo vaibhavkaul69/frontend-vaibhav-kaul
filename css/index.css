@@ -17,6 +17,61 @@ body{
     justify-content: center;
     align-items: center;
 }
+.event-card{
+    background-color: #fff;
+    width:50%;
+    position: relative;
+    word-break: break-all;
+    margin:10px auto;
+}
+.event-card > .closeBtn
+{
+    position: absolute;
+    color:red;
+    right:0;
+    bottom:0;
+    border:none;
+    height:50px;
+    width:40px;
+    font-weight: bolder;
+    text-align: center;
+    background:var(--success);
+}
+.event-card >.editBtn
+{
+    position: absolute;
+    color:red;
+    right:45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:0px;
+    border:none;
+    height:50px;
+    width:40px;
+    font-weight: bolder;
+    text-align: center;
+    background:var(--success);
+}
+.event-card >.editBtn > img{
+    position: absolute;
+    right:-5px;
+    height:auto;
+    width:50px;
+}
+.event-card > .event-counter{
+    position: absolute;
+    left:5px;
+    top:5px;
+    font-family: 'baskerville old face';
+    background:var(--primary);
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+}
 .right_large_calender,
 .left_sidebar_calender{
     padding: 0px !important;
@@ -72,3 +127,10 @@ tr{
     text-align: center;
 }
 
+@media only screen and (max-width:500px){
+    .event-card{
+        background-color: #fff;
+        width:90%;
+        margin:10px auto;
+    }
+}

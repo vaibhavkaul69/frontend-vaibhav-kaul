@@ -162,7 +162,7 @@ const createAddEventModal=(monthName)=>{
     </form>   
         </div>
         <div class="modal-footer">
-          <button type="button" id='add-event' onclick='addEventBtn()' class="btn  btn-outline-success">Add Event</button>
+          <button type="button" id='add-event' onclick='addEventBtn(this.${monthName.month}_${event.target.textContent})' class="btn  btn-outline-success">Add Event</button>
         </div>
       </div>
     </div>
@@ -201,9 +201,22 @@ tbl.addEventListener('click',(event)=>{
 
 const addEventBtn=()=>{
     console.log('Btn clicked');
+    //Get the input from Create Event Modal Box.
     const eventName=document.getElementById('inputEventName').value;
     const eventDescription=document.getElementById('inputEventDescription').value;
     const eventTime=document.getElementById('inputEventTime').value;
+    const eventDate=showCalendar(currentMonth,currentYear);
+    //Create an object of all the input items
+    let eventObject={
+        name:eventName,
+        description:eventDescription,
+        time:eventTime,
+        date:eventDate.month
+    }
+    localStorage.setItem('event-count',++eventCount);
+    localStorage.setItem('event-'+localStorage.getItem('event-count'),JSON.stringify(eventObject));
+
+    //Store the inputs to the local storage so as to retrieve them back when we want.
     console.log(`${eventName} ${eventDescription} ${eventTime}`);
 };
 
