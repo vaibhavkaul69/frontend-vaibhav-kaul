@@ -26,6 +26,7 @@ body{
 }
 .event-card > .closeBtn
 {
+    margin:2px;
     position: absolute;
     color:red;
     right:0;
@@ -35,12 +36,13 @@ body{
     width:40px;
     font-weight: bolder;
     text-align: center;
-    background:var(--success);
+    background:linear-gradient(to right top,#11998e,#38ef7d);
 }
 .event-card >.editBtn
 {
     position: absolute;
     color:red;
+    margin:2px;
     right:45px;
     display: flex;
     align-items: center;
@@ -51,7 +53,7 @@ body{
     width:40px;
     font-weight: bolder;
     text-align: center;
-    background:var(--success);
+    background:linear-gradient(to right top,#11998e,#38ef7d);
 }
 .event-card >.editBtn > img{
     position: absolute;
@@ -72,31 +74,22 @@ body{
     width:20px;
     border-radius: 50%;
 }
-.right_large_calender,
-.left_sidebar_calender{
+.event-card > strong{
+    background:linear-gradient(to right top,#11998e,#38ef7d);
+    color:#fff;
+    padding:10px;
+}
+.center_large_calender{
     padding: 0px !important;
 }
-.left_sidebar_calender{
-    position: fixed;
-    z-index: 20;
-    left:0;
-    top:0;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height:100vh;
-    background:var(--primary);
-}
-.right_large_calender{
+.center_large_calender{
     width: 100%;
     margin:20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.right_large_calender > .container > .card{
+.center_large_calender > .container > .card{
     padding:20px;
 }
 
@@ -126,8 +119,7 @@ tr{
     font-size: 20px;
     text-align: center;
 }
-
-@media only screen and (max-width:500px){
+@media only screen and (max-width:800px){
     .event-card{
         background-color: #fff;
         width:90%;

@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     <link rel="icon" href="/assets/calender.png"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/bootstrap-grid.min.css"/>
-    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/index.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md  navbar-light w-100  bg-light justify-content-between">
-        <a class="navbar-brand" href="/index.html">
-          <img src="/assets/calender.png" alt="">
-        </a>
-        <h3>Calen-Clone - Explore The Events &#128525;</h3>
-        <h3> </h3>
-      </nav>
+  <nav class="navbar  navbar-light w-100 d-flex bg-light justify-content-between">
+    <a class="navbar-brand" href="/index.html">
+        <img src="/assets/calender.png" alt="">
+      </a>
+        <form class="form-inline my-2 my-lg-0 d-flex justify-content-center ">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" id="searchEvents" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <a href="/index.html" class="ml-3 btn btn-outline-success toggle-sidebar mr-5">Home</a> 
+        </form>
+  </nav>
+  <h3 class="view-event-nav-text text-center mt-5 text-white"> Calen Clone <hr class="border-white w-25 mx-auto"/>  View Events &#128525;</h3>
     <div id="events" class="mt-5">
      
     </div>
 </body>
 <script src="/js/events.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 </html>
+
