@@ -17,7 +17,7 @@ Calen-Clone is a replica of Google Calender.The project is hosted on Github http
 2. *I have provided 2 arrows above the calender to go to the previous and next years.*
 3. *Once the user has selected a particular month then he can click on the specific date of adding event.*
 4. *Once you click on the date an Add Event Dialog Box appears.*
-4. *You can fill the Name, Description, Time of the event as well as you can switch On notifications for an event by checking the Add           Notification button.*
+4. *You can fill the Name, Description, Time of the event as well as you can switch On notifications for an event by checking the Add Notification button.*
 5. *Click on Add Event button and your visits gets added.*
 6. *To View an event click on right most Show Saved Events button on navbar*
 
@@ -75,20 +75,21 @@ Calen-Clone is a replica of Google Calender.The project is hosted on Github http
  ### Landing Page ### 
  * This page has a big calender in the center.
     
- ![LandingPage](https://i.imgur.com/X7OqKkz.png)
+ ![LandingPage](https://imgur.com/MHmxjE2)
 
 ### Add Event Modal ###
 
-![AddEvent](https://i.imgur.com/TsLAeHt.png)
+![AddEvent](https://imgur.com/pQ5LIKT)
 
 ### Explore Events Page ###
 
 ![ExploreEvents](https://i.imgur.com/WRvhrl6.png)
 
  ### Access the Events Data From LocalStorage in Browser ### 
+
  *You will only see some content there when you add any event other wise it will stay empty*
 
- ![Acces the Events Data](https://i.imgur.com/AIvamXh.mp4)
+ ![Acces the Events Data](https://imgur.com/YwLF7UW)
 
 # Deployment
 This app is deployed at Github-Pages.  https://vaibhavkaul69.github.io/frontend-vaibhav-kaul/
@@ -96,7 +97,7 @@ This app is deployed at Github-Pages.  https://vaibhavkaul69.github.io/frontend-
 # Contact Details
 1. Name:Vaibhav Kaul
 2. Phone:9896938770
-3. Email- vaibhavkaul2@gmail.com
+3. Email- vaibhav.kaul2@gmail.com
 
 
 
