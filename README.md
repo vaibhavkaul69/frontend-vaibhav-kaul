@@ -73,20 +73,16 @@ Calen-Clone is a replica of Google Calender.The project is hosted on Github http
 # Interface #
 ---
  ### Landing Page ### 
- * This page has a big calender in the center.
-    
  ![LandingPage](https://i.imgur.com/MHmxjE2.png)
 
 ### Add Event Modal ###
-
-![AddEvent](https://i.imgur.com/W5snRn2.png)
+ ![AddEvent](https://i.imgur.com/W5snRn2.png)
 
 ### Explore Events Page ###
-
-![ExploreEvents](https://i.imgur.com/pQ5LIKT.png)
-
- ### Access the Events Data From LocalStorage in Browser.You will only see some content there when you add any event other wise it will stay empty ### 
-
+ ![ExploreEvents](https://i.imgur.com/pQ5LIKT.png)
+ 
+### Access the Events Data From LocalStorage in Browser ### 
+ *You will only see some content there when you add any event other wise it will stay empty*
  ![Access the Events Data](https://i.imgur.com/ew1rub0.gifv)
 
 # Deployment
