@@ -89,7 +89,7 @@ Calen-Clone is a replica of Google Calender.The project is hosted on Github http
 
  *You will only see some content there when you add any event other wise it will stay empty*
 
- ![Access the Events Data](https://i.imgur.com/AIvamXh.mp4)
+ ![Access the Events Data](https://i.imgur.com/ew1rub0.gifv)
 
 # Deployment
 This app is deployed at Github-Pages.  https://vaibhavkaul69.github.io/frontend-vaibhav-kaul/
