@@ -72,12 +72,12 @@ const editTask=(e)=>{
     if(editable){
         e.parentNode.setAttribute('contenteditable','true');
         console.log(e.children[0].src);
-        e.children[0].src='./assets/done.png';
+        e.children[0].src='https://github.com/vaibhavkaul69/frontend-vaibhav-kaul/blob/master/assets/done.png';
         editable=false;
     }
     else{
         e.parentNode.setAttribute('contenteditable','false');
-        e.children[0].src='./assets/pencil.png';
+        e.children[0].src='https://github.com/vaibhavkaul69/frontend-vaibhav-kaul/blob/master/assets/pencil.png';
         editable=true;
 
         let eventObject={
