@@ -112,7 +112,7 @@ while(actualEvent!=0)
     eventContainer.innerHTML+=`
     <div class="jumbotron event-card">
         <button class='closeBtn' onclick='deleteListItem(this)'> X</button>
-        <button class="editBtn" onclick='editTask(this)' ><img src="/assets/pencil.png" alt='@'/></button>
+        <button class="editBtn" onclick='editTask(this)' ><img src="https://github.com/vaibhavkaul69/frontend-vaibhav-kaul/blob/master/assets/pencil.png" alt='@'/></button>
         <h2 class='d-flex align-items-center text-danger justify-content-between'>${eventData.name} </h2>
         <h5 class='display-5'>You Have an Event at <span class='text-primary'> ${eventData.time}</span> on <span class='display-5 text-weight-bold text-success'>${eventData.date}</span><br/><span class='text-success lead'> ${eventData.description}</span><br/><br/></h5>
         <strong >Enjoy Your Event.!</strong>
