@@ -63,7 +63,7 @@ const deleteListItem=(e)=>
             e.parentNode.remove();    
         }
         //Update the event items to local storage.
-        localStorage.removeItem('event-'+e.parentNode.children[6].textContent);
+        localStorage.removeItem('event-'+e.parentNode.children[7].textContent);
 }
 const editTask=(e)=>{
     console.log(e.parentNode);
@@ -85,10 +85,10 @@ const editTask=(e)=>{
             description:e.parentNode.children[4].children[3].textContent,
             time:e.parentNode.children[4].children[0].textContent,
             date:e.parentNode.children[3].children[2].textContent,
-            notify:e.parentNode.children[5].textContent
+            notify:e.parentNode.children[6].textContent
         }
         if(e.parentNode.children[2].textContent.length>0){
-            localStorage.setItem('event-'+e.parentNode.children[6].textContent,JSON.stringify(eventObject));
+            localStorage.setItem('event-'+e.parentNode.children[7].textContent,JSON.stringify(eventObject));
         }
         else{
             alert('Since You Have Not Entered Anything \n So The Previous Value Will Be Displayed on Page Reload.');
@@ -115,8 +115,9 @@ while(actualEvent!=0)
         <button class="editBtn" onclick='editTask(this)' ><img src="/assets/pencil.png" alt='@'/></button>
         <h2 class='d-flex align-items-center text-danger justify-content-between'>${eventData.name} </h2>
         <h5 class='display-5'>You Have an Event at <span class='text-primary'> ${eventData.time}</span> on <span class='display-5 text-weight-bold text-success'>${eventData.date}</span><br/><span class='text-success lead'> ${eventData.description}</span><br/><br/></h5>
-        <strong>Enjoy Your Event.!</strong>
-        <strong>${eventData.notifyMe}</strong>
+        <strong >Enjoy Your Event.!</strong>
+        <hr/>
+        <strong >${eventData.notifyMe}</strong>
         <span class='event-counter'>${actualEvent}</span>
     </div>
     `;
