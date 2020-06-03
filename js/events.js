@@ -54,7 +54,7 @@ const allLocalStorageItems=()=>
 console.log(allLocalStorageItems());
 const deleteListItem=(e)=>
 {
-    e.preventDefault();
+   
 
     //Check which child of list container contains class=closeBtn and point to that child.
         if(confirm('Are You Sure About That??'))
