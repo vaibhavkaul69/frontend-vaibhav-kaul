@@ -211,12 +211,22 @@ const addEventBtn=()=>{
     const eventDescription=document.getElementById('inputEventDescription').value;
     const eventTime=document.getElementById('inputEventTime').value;
     const eventDate=document.getElementById('disabled-date').placeholder;
+    let notifyMeOrNot=document.getElementById('NotifyOrNot');
+    if(notifyMeOrNot.checked){
+        notifyMeOrNot='You will be notified .!';
+    }
+    else{
+        notifyMeOrNot='You will Not be notified .!';
+    }
+    console.log(notifyMeOrNot);
+    
     //Create an object of all the input items
     let eventObject={
         name:eventName,
         description:eventDescription,
         time:eventTime,
-        date:eventDate
+        date:eventDate,
+        notifyMe:notifyMeOrNot
     }
     localStorage.setItem('evt-count',++eventCount);
     localStorage.setItem('event-'+localStorage.getItem('evt-count'),JSON.stringify(eventObject));
