@@ -1,13 +1,13 @@
-const staticCacheArray='calen-v1';
-const dynamicCacheArray='calen-dyn-v1';
+const staticCacheArray='calen';
+const dynamicCacheArray='calen-dyn';
 const assets=[
-    '/',
-    '/index.html',
-    '/events.html',
-    '/manifest.json',
-    '/js/events.js',
-    '/assets/done.png',
-    '/assets/pencil.png'
+    './',
+    './index.html',
+    './manifest.json',
+    './js/events.js',
+    './assets/done.png',
+    './assets/pencil.png',
+    './fallback.html'
 ];
 
 self.addEventListener('install',installEvent=>{
@@ -50,6 +50,6 @@ self.addEventListener('fetch',fetchEvent=>{
                 .catch(error=>console.log(`Error in caching to dynamic array ${error}`))
             })
         })
-        .catch(error=>console.log(`Error in fetching resource ${error}`))
+        .catch(()=>caches.match('./fallback.html'))
     );
 });
