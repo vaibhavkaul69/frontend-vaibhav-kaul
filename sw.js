@@ -1,7 +1,6 @@
 const staticCacheArray='calen-v4';
 const dynamicCacheArray='calen-dyn-v1';
 const assets=[
-    '/',
     'index.html',
     'events.html',
     'manifest.json',
