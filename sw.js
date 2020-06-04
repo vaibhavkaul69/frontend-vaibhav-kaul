@@ -46,9 +46,10 @@ self.addEventListener('fetch',fetchEvent=>{
         caches.match(fetchEvent.request)
         .then(matchRes=>{
             return matchRes || fetch(fetchEvent.request).then(fetchRes=>{
-                caches.open(dynamicCacheArray)
+                return caches.open(dynamicCacheArray)
                 .then(openCache=>{
-                    openCache.add(fetchRes);
+                    openCache.add(fetchRes.clone());
+                    return fetchRes;
                 })
                 .catch(error=>console.log(`Error in caching to dynamic array ${error}`))
             })
