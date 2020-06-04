@@ -10,6 +10,8 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--Custom css-->
     <link rel="stylesheet" href="css/index.css"/>
+    <link rel="manifest" href="manifest.json"/>
+    <meta name="theme-color" content="#ffffff"/>
     <script>
        
     </script>
@@ -116,7 +118,13 @@
         </div>
 </div>
 </body>
-
+<script>
+    if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('sw.js')
+        .then(res=>console.log('Service Worker Regsitered.'))
+        .catch(error=>console.log('Error Registering Service Worker.'));
+    }
+</script>
 <script src="js/index.js"></script>
 
 <!-- Optional JavaScript for bootstrap -->

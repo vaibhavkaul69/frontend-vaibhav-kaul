@@ -11,6 +11,13 @@ Calen-Clone is a replica of Google Calender.The project is hosted on Github http
 
 # How it works?
 
+### I HAVE ADDED A PROGRESSIVE WEB APP FUNCTIONALITY IN IT. ####
+*NOW YOU CAN USE THIS OFFLINE FROM YOUR HOMESCREEN*
+1. For this you need to browse the website first on your Browser for 30 seconds.
+2. Between those 30 seconds an *ADD TO HOMESCREEN* will prompt on your screen.
+3. Add the app and enjoy it offline too.
+
+
 ### On the index.html page ###
 
 1. *First the user needs to select any month and year from the calender*
@@ -28,6 +35,13 @@ Calen-Clone is a replica of Google Calender.The project is hosted on Github http
 3. *To delete an event click on the X icon on the bottom left of the Event-Card*
 4. *To Edit an event click on the PENCIL ICON on the bottom left of Event-Card*
 5. *To save the edit click in the RED TICK on the bottom left of Event-Card*
+
+
+### I HAVE ADDED A PROGRESSIVE WEB APP FUNCTIONALITY IN IT. ####
+*NOW YOU CAN USE THIS OFFLINE FROM YOUR HOMESCREEN*
+1. For this you need to browse the website first on your Browser for 30 seconds.
+2. Between those 30 seconds an *ADD TO HOMESCREEN* will prompt on your screen.
+3. Add the app and enjoy it offline too.
 
 # Installation #
 ---
@@ -80,9 +94,10 @@ Calen-Clone is a replica of Google Calender.The project is hosted on Github http
 
 ### Explore Events Page ###
  ![ExploreEvents](https://i.imgur.com/pQ5LIKT.png)
- 
+
 ### Access the Events Data From LocalStorage in Browser ### 
  *You will only see some content there when you add any event other wise it will stay empty*
+ 
  ![Access the Events Data](https://i.imgur.com/ew1rub0.gifv)
 
 # Deployment
