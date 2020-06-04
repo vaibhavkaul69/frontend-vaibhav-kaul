@@ -7,11 +7,7 @@ const assets=[
     '/manifest.json',
     '/js/events.js',
     '/assets/done.png',
-    '/assets/pencil.png',
-    'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css ',
-    'https://code.jquery.com/jquery-3.3.1.slim.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js',
-    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js'
+    '/assets/pencil.png'
 ];
 
 self.addEventListener('install',installEvent=>{
@@ -48,7 +44,7 @@ self.addEventListener('fetch',fetchEvent=>{
             return matchRes || fetch(fetchEvent.request).then(fetchRes=>{
                 return caches.open(dynamicCacheArray)
                 .then(openCache=>{
-                    openCache.add(fetchRes.clone());
+                    openCache.put(fetchEvent.request,fetchRes.clone());
                     return fetchRes;
                 })
                 .catch(error=>console.log(`Error in caching to dynamic array ${error}`))
