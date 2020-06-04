@@ -1,4 +1,4 @@
-const staticCacheArray='calen';
+const staticCacheArray='calen-v3';
 const dynamicCacheArray='calen-dyn';
 const assets=[
     './',
