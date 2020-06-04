@@ -12,7 +12,12 @@ Calen-Clone is a replica of Google Calender.The project is hosted on Github http
 # How it works?
 
 
-
+### I HAVE ADDED A PROGRESSIVE WEB APP FUNCTIONALITY IN IT. ####
+*NOW YOU CAN USE THIS OFFLINE FROM YOUR HOMESCREEN IN BOTH MOBILE AND DESKTOP DEVICE*
+1. For this you need to browse the website first on your Browser for 30 seconds.
+2. Between those 30 seconds an *ADD TO HOMESCREEN* will prompt on your screen.
+3. Add the app and enjoy it offline too.
+*/
 
 
 ### On the index.html page ###
