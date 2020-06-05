@@ -74,11 +74,6 @@ body{
     width:20px;
     border-radius: 50%;
 }
-.event-card > strong{
-    background:linear-gradient(to right top,#11998e,#38ef7d);
-    color:#fff;
-    padding:10px;
-}
 .center_large_calender{
     padding: 0px !important;
 }

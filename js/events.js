@@ -1,6 +1,16 @@
 let eventCount=localStorage.getItem('evt-count');
 const eventContainer=document.getElementById('events');
 let searchEvent=document.getElementById('searchEvents');
+let clearEvents=document.getElementById('resetLocalStorage');
+clearEvents.addEventListener('click',()=>{
+    let localStorageItemsArray=Object.keys(localStorage);
+    console.log(localStorageItemsArray);
+    localStorageItemsArray.map(element=>{
+        if(element.includes('event-') || element==='evt-count'){
+            localStorage.removeItem(element);
+        }
+    });
+});
 let actualEvent=0;
 //A state variable which keeps track for the editable content of the list
 let editable=true;
@@ -115,9 +125,9 @@ while(actualEvent!=0)
         <button class="editBtn" onclick='editTask(this)' ><img src="./assets/pencil.png" alt='@'/></button>
         <h2 class='d-flex align-items-center text-danger justify-content-between'>${eventData.name} </h2>
         <h5 class='display-5'>You Have an Event at <span class='text-primary'> ${eventData.time}</span> on <span class='display-5 text-weight-bold text-success'>${eventData.date}</span><br/><span class='text-success lead'> ${eventData.description}</span><br/><br/></h5>
-        <strong >Enjoy Your Event.!</strong>
+        <strong class=' btn btn-outline-success p-3' >Enjoy Your Event.!</strong>
         <hr/>
-        <strong >${eventData.notifyMe}</strong>
+        <strong class=' btn btn-outline-danger p-3'>${eventData.notifyMe}</strong>
         <span class='event-counter'>${actualEvent}</span>
     </div>
     `;
@@ -125,4 +135,10 @@ while(actualEvent!=0)
 }
 console.log(actualEvent);
 
-document.querySelector('.event-card').addEventListener('click',doSomeOperation);
+if(document.getElementsByClassName('event-card').length>0){
+    console.log(document.querySelector('.event-card'));
+    document.querySelector('.event-card').addEventListener('click',doSomeOperation);
+    
+}
+
+

@@ -16,16 +16,21 @@
     <a class="navbar-brand m-0 justify-content-start col-6" href="index.html">
         <img src="assets/calender.png" alt="">
       </a>
-        <form class="form-inline justify-content-center p-0 m-0 col-6  ">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" id="searchEvents" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          <a href="index.html" class="btn btn-outline-primary toggle-sidebar">Home</a> 
+        <form class="form-inline justify-content-center mx-auto p-0 m-0 col-6  ">
+          <input class="form-control col-xl-8 col-md-8 col-lg-8 col-sm-8 mr-2 mb-2 col-12" type="search" placeholder="Search" id="searchEvents" aria-label="Search">
+          <button class="btn btn-outline-success col-xl-4 col-md-4 col-lg-4 col-sm-4  col-12" type="submit">Search</button>
         </form>
   </nav>
+  <div class="row justify-content-center w-100 d-flex">
+    <a href="index.html" class="btn btn-outline-primary  mx-auto mt-3 col-xl-3 col-md-3 col-lg-3 col-sm-3 col-3 ">Home</a>
+  </div> 
   <h3 class="view-event-nav-text text-center mt-5 text-white"> Calen Clone <hr class="border-white w-25 mx-auto"/>  View Events &#128525;</h3>
     <div id="events" class="mt-5">
      
     </div>
+    <div class="row justify-content-end w-100 d-flex">
+      <button id="resetLocalStorage" class="btn btn-outline-danger  mt-3 col-xl-2 col-md-2 col-lg-2 col-sm-2 col-3 ">Reset</button>
+    </div> 
 </body>
 <script src="js/events.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

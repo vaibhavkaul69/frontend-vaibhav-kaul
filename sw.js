@@ -1,9 +1,10 @@
-const staticCacheArray='calen-v3';
-const dynamicCacheArray='calen-dyn';
+const staticCacheArray='calen-static-v5';
+const dynamicCacheArray='calen-dynamic';
 const assets=[
     './',
     './index.html',
     './manifest.json',
+    './events.html',
     './js/events.js',
     './assets/done.png',
     './assets/pencil.png',
@@ -25,13 +26,15 @@ self.addEventListener('activate',actEvent=>{
     console.log(actEvent);
     actEvent.waitUntil(
         caches.keys()
-        .then(cacheArray=>{
-            cacheArray.map(element=>{
-                if(element!==staticCacheArray && element!==dynamicCacheArray){
-                    caches.delete(element);
-                }
+        .then(cacheArray=>
+            {
+                let filteredArray=cacheArray.filter(element=>element.includes('static'));
+                filteredArray.map(element=>{
+                    if(element!==staticCacheArray){
+                        caches.delete(element);
+                    }
+                })
             })
-        })
     );
 });
 
